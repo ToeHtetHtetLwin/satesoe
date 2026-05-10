@@ -1,9 +1,9 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router'; // Router ပါရပါမယ်
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import gsap from 'gsap';
-import confetti from 'canvas-confetti'; 
+import confetti from 'canvas-confetti';
 
 @Component({
   selector: 'app-chawtay',
@@ -14,6 +14,7 @@ import confetti from 'canvas-confetti';
 })
 export class ChawtayComponent implements OnInit {
   private route = inject(ActivatedRoute);
+  private router = inject(Router); // Router ကို inject လုပ်ပါ
   private http = inject(HttpClient);
 
   customerData: any = null;
@@ -38,10 +39,21 @@ export class ChawtayComponent implements OnInit {
 
     this.http.get<any[]>('/customers.json').subscribe({
       next: (data) => {
-        this.customerData = data.find(c => c.id === customerId) || data[0];
-        this.initFloatingBackground();
+        // ID ကို ရှာမယ်
+        const foundCustomer = data.find(c => c.id === customerId);
+
+        if (foundCustomer) {
+          this.customerData = foundCustomer;
+          this.initFloatingBackground();
+        } else {
+          // ID မတွေ့ရင် Sorry page ကို redirect လုပ်မယ်
+          this.router.navigate(['/']);
+        }
       },
-      error: (err) => console.error('Data load error:', err)
+      error: (err) => {
+        console.error('Data load error:', err);
+        this.router.navigate(['/']);
+      }
     });
   }
 
@@ -50,10 +62,12 @@ export class ChawtayComponent implements OnInit {
   }
 
   initFloatingBackground() {
-    setInterval(() => {
+    const interval = setInterval(() => {
       if (!this.isAccepted) {
         const emoji = this.floatingEmojis[Math.floor(Math.random() * this.floatingEmojis.length)];
         this.spawnEmoji(emoji);
+      } else {
+        clearInterval(interval);
       }
     }, 600);
   }
@@ -86,8 +100,7 @@ export class ChawtayComponent implements OnInit {
   onYesClick() {
     this.isAccepted = true;
     this.fireConfetti();
-    
-    // Success content animation
+
     setTimeout(() => {
       gsap.from('.success-content', {
         opacity: 0,
@@ -101,7 +114,9 @@ export class ChawtayComponent implements OnInit {
 
   fireConfetti() {
     const end = Date.now() + 3000;
-    const colors = [this.customerData.themeColor, '#ffffff', '#60a5fa'];
+    // themeColor မရှိခဲ့ရင် default အရောင် သတ်မှတ်ပေးဖို့ logic
+    const primaryColor = this.customerData?.themeColor || '#ff007f';
+    const colors = [primaryColor, '#ffffff', '#60a5fa'];
 
     (function frame() {
       confetti({ particleCount: 3, angle: 60, spread: 55, origin: { x: 0 }, colors: colors });
