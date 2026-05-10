@@ -1,0 +1,15 @@
+:host {
+  display: block;
+  overflow: hidden; /* Prevents scrollbars from floating emojis */
+  height: 100vh;
+  width: 100vw;
+}
+
+.no-btn {
+  transition: all 0.2s ease;
+}
+
+/* Ensure emojis are behind the card */
+div.fixed {
+  z-index: 0;
+}
