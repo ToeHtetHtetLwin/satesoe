@@ -9,5 +9,16 @@
     "giftText": "ရော့... ဒါလေးက မင်းအတွက် ပန်းလေး 🌸",
     "videoUrl": "lonely.mp4", 
     "themeColor": "#3b82f6"
+  },
+   {
+    "id": "002",
+    "name": "",
+    "mainQuestion": "စိတ်ကောက်နေသေးလားဟင်?",
+    "askingImage": "sry.webp",
+    "successImage": "fl.webp",
+    "successMessage": "စိတ်ကောက်ပြေသွားပြီ!❤️",
+    "giftText": "ရော့... ဒါလေးက မင်းအတွက် ပန်းလေး 🌸",
+    "videoUrl": "lonely.mp4", 
+    "themeColor": "#ffcc00"
   }
 ]
