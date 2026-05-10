@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import gsap from 'gsap';
-import confetti from 'canvas-confetti';
+import confetti from 'canvas-confetti'; 
 
 @Component({
   selector: 'app-chawtay',
