@@ -8,7 +8,7 @@ export const routes: Routes = [
     component: ChawtayComponent
   },
   {
-    path: '', // Default path မှာ SorryComponent ကိုပြမယ်
+    path: '', 
     component: SorryComponent
   },
   {
