@@ -42,5 +42,27 @@
     "giftText": "ရော့... ဒါလေးက မင်းအတွက် ပန်းလေး 🌸",
     "videoUrl": "lonely.mp4",
     "themeColor": "#3b82f6"
+  },
+   {
+    "id": "030",
+    "name": "",
+    "mainQuestion": "စိတ်ကောက်နေသေးလားဟင်?",
+    "askingImage": "sorry.webp",
+    "successImage": "flower.webp",
+    "successMessage": "စိတ်ကောက်ပြေသွားပြီ yay!❤️",
+    "giftText": "ရော့... ဒါလေးက မင်းအတွက် ပန်းလေး 🌸",
+    "videoUrl": "lonely.mp4",
+    "themeColor": "#3b82f6"
+  },
+   {
+    "id": "031",
+    "name": "",
+    "mainQuestion": "စိတ်ကောက်နေသေးလားဟင်?",
+    "askingImage": "sorry.webp",
+    "successImage": "flower.webp",
+    "successMessage": "စိတ်ကောက်ပြေသွားပြီ yay!❤️",
+    "giftText": "ရော့... ဒါလေးက မင်းအတွက် ပန်းလေး 🌸",
+    "videoUrl": "lonely.mp4",
+    "themeColor": "#3b82f6"
   }
 ]
