@@ -86,5 +86,16 @@
     "giftText": "ရော့... ဒါလေးကက​လေးအတွက် ပန်းလေး 🌸",
     "videoUrl": "lonely.mp4",
     "themeColor": "#3b82f6"
+  },
+   {
+    "id": "002",
+    "name": "",
+    "mainQuestion": "ဦးငယ်စိတ်ကောက်နေသေးလားဟင်?",
+    "askingImage": "girl.gif",
+    "successImage": "grose.gif",
+    "successMessage": "စိတ်ကောက်ပြေသွားပြီ yay!❤️",
+    "giftText": "ရော့... ဒါလေးကဦးငယ်အတွက် ပန်းလေး 🌸",
+    "videoUrl": "lonely.mp4",
+    "themeColor": "#3b82f6"
   }
 ]
