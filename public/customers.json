@@ -87,7 +87,7 @@
     "videoUrl": "lonely.mp4",
     "themeColor": "#3b82f6"
   },
-   {
+  {
     "id": "002",
     "name": "",
     "mainQuestion": "ဦးငယ်စိတ်ကောက်နေသေးလားဟင်?",
@@ -96,6 +96,17 @@
     "successMessage": "စိတ်ကောက်ပြေသွားပြီ yay!❤️",
     "giftText": "ရော့... ဒါလေးကဦးငယ်အတွက် ပန်းလေး 🌸",
     "videoUrl": "tay.mp4",
+    "themeColor": "#3b82f6"
+  },
+  {
+    "id": "003",
+    "name": "",
+    "mainQuestion": "မ စိတ်ကောက်နေသေးလားဟင်?",
+    "askingImage": "sorry.webp",
+    "successImage": "flower.webp",
+    "successMessage": "စိတ်ကောက်ပြေသွားပြီ yay!❤️",
+    "giftText": "ရော့... ဒါလေးကမအတွက် ပန်းလေး 🌸",
+    "videoUrl": "lonely.mp4",
     "themeColor": "#3b82f6"
   }
 ]
