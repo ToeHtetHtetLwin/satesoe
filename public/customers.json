@@ -119,5 +119,16 @@
     "giftText": "ရော့... ဒါလေးကမီးအတွက် ပန်းလေး 🌸",
     "videoUrl": "lonely.mp4",
     "themeColor": "#3b82f6"
+  },
+  {
+    "id": "005",
+    "name": "",
+    "mainQuestion": "လူကြီးလေး...စိတ်ကောက်နေသေးလားဟင်?",
+    "askingImage": "sorry.webp",
+    "successImage": "flower.webp",
+    "successMessage": "စိတ်ကောက်ပြေသွားပြီ yay!❤️",
+    "giftText": "ရော့... ဒါလေးကလူကြီးလေးအတွက် ပန်းလေး 🌸",
+    "videoUrl": "lonely.mp4",
+    "themeColor": "#3b82f6"
   }
 ]
